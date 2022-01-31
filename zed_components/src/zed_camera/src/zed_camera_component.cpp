@@ -260,7 +260,7 @@ void ZedCamera::initParameters()
         getOdParams();
 
     // Dynamic parameters callback
-    add_on_parameters_set_callback(
+    add_on_set_parameters_callback(
         std::bind(&ZedCamera::callback_paramChange, this, _1));
 }
 
